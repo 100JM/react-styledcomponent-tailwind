@@ -57,6 +57,31 @@ styled-components로부터 styled를 import하고 자바스크립트 객체인 s
 적용된 스타일을 살펴보면 styled-components는 고유한 CSS 클래스 이름은 생성하고 헤더 섹션에서 해당 클래스에대해 개발자가 작성한 CSS 규칙을 정의한다.   
 그런 다음 생성된 클래스를 요소에 추가한다.   
 ![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/5f136550-fab0-40b3-812e-617d7308f01d)
-![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/3150c2da-d5ce-4281-8b0e-b9bf97d6cf91)
+![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/3150c2da-d5ce-4281-8b0e-b9bf97d6cf91)   
 
+조건부 스타일링 또한 가능하며 styled-components 스타일링 코드에서만 사용하고 싶은 속성에는 달러 기호를 사용하는 것이 일반 규칙이다.   
+이렇게하면 내장 속성과 출동하지 않는다.   
+![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/81554daf-c6ac-4bd7-b117-735e055dcf1c)
+![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/fd8de44e-40b1-4473-923e-83da837a252c)   
 
+### 가상 선택자, 중첩 규칙 & 미디어 쿼리
+& 기호를 사용하여 해당 요소내의 다른 요소들의 규칙이나 미디어 쿼리를 작성한다.   
+아래 사진처럼 & 기호가 header 요소를 가르키는거라 생각하면 될 것같다.   
+> & 다음 공백이 있어야 해당 요소의 하위 요소가 목표가된다.
+
+![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/50fc0a80-06d2-4609-b31a-89694076c15c)   
+
+가상(pseudo) 선택자의 경우 아래와 같이 작성한다.   
+> 해당 요소 자체가 목표가 되어야 하는 경우 & 기호다음 빈 공간 없이 작성한다.
+
+![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/89996cbb-9481-4185-8e4a-13baf3d155f0)   
+
+### 장단점
+- 장점
+1. 꽤 간단하며 많은 추가 작업이 필요하지 않다.
+2. 스타일이 자동으로 범위가 지정되어 CSS 규칙이나 스타일 충돌이 발생하지 않는다.
+
+- 단점
+1. 바닐라 CSS를 알아야한다.
+2. 스타일이 컴포넌트와 동일한 파일 혹은 옆에 정의 되어 있기에 강한 분리가 없다.
+3. 버튼이나 입력 컴포넌트와 같은 비교적 작은 래퍼(warpper) 컴포넌트가 많이 생기는 경향이 있다.
