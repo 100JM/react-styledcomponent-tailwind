@@ -1,6 +1,6 @@
 React - vanilla CSS & styled-components & tailwind CSS
 ============
-
+<br/>
    
 Vanilla CSS
 ----------
@@ -41,6 +41,8 @@ CSS 모듈을 사용한 컴포넌트에서 아래와 같이 import 한다음 사
 ![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/069f7531-c116-43f6-828c-4f558b12a67d)   
 ![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/48d6988c-6aa6-4ad6-82d8-8764e7f969d2)
 
+<br/>
+      
 styled-components
 --------
 ### 개념
@@ -85,7 +87,8 @@ styled-components로부터 styled를 import하고 자바스크립트 객체인 s
 1. 바닐라 CSS를 알아야한다.
 2. 스타일이 컴포넌트와 동일한 파일 혹은 옆에 정의 되어 있기에 강한 분리가 없다.
 3. 버튼이나 입력 컴포넌트와 같은 비교적 작은 래퍼(warpper) 컴포넌트가 많이 생기는 경향이 있다.
-
+<br/>
+   
 Tailwind CSS
 ----------
 Tailwind CSS는 어떤 웹 프로젝트에서든 사용할 수 있는 CSS 프레임워크로 HTML 요소에 mb-6, flex와 같이 미리 정의된 클래스를 추가하여 스타일링 할 수 있다.   
@@ -114,7 +117,7 @@ export default {
 }
 ```
 3. 메인 CSS 파일에 아래 코드를 추가하여 Tailwind CSS 스타일을 추가한다.   
-   @tailwind 디렉티브는 빌드시에 CSS 코드로 변환된다고 한다.
+   **@tailwind** 디렉티브는 빌드시에 CSS 코드로 변환된다고 한다.
 ```css
 @tailwind base;
 @tailwind components;
@@ -122,7 +125,8 @@ export default {
 ```
 
 ### 추천하는 확장 프로그램
-Tailwind CSS의 공식 문서에세 정의된 모든 클래스의 이름을 찾아볼 수 있지만 번거로움을 조금이라도 줄이기위한 Tailwind CSS IntelliSense 라는 확장 프로그램이 있다.   
-이는 Tailwind 팀에서 자체적으로 출시한 것으로 코드를 작성할때 클래스 이름을 제안 받고 해당 클래스가 어떠한 스타일링이 적용되는지 미리 확인해볼 수 있는 아주 좋은 프로그램이다.   
+Tailwind CSS의 공식 문서에세 정의된 모든 클래스의 이름을 찾아볼 수 있지만 번거로움을 조금이라도 줄이기위한 **Tailwind CSS IntelliSense** 라는 확장 프로그램이 있다.   
+이는 Tailwind 팀에서 자체적으로 출시한 것으로 코드를 작성할때 **클래스 이름을 제안** 받고 해당 클래스가 **어떠한 스타일링이 적용되는지** 미리 확인해볼 수 있는 아주 좋은 프로그램이다.   
 설치하는 것을 적극 추천한다.   
+![스크린샷 2024-03-14 173334](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/2efff69a-1c53-4737-949c-98534c732906)
 ![스크린샷 2024-03-14 172954](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/4f55d216-98d6-43c6-84b6-e83a8bbd347f)
