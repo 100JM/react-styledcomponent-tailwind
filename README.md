@@ -69,13 +69,11 @@ styled-components로부터 styled를 import하고 자바스크립트 객체인 s
 ### 가상 선택자, 중첩 규칙 & 미디어 쿼리
 & 기호를 사용하여 해당 요소내의 다른 요소들의 규칙이나 미디어 쿼리를 작성한다.   
 아래 사진처럼 & 기호가 header 요소를 가르키는거라 생각하면 될 것같다.   
-> & 다음 공백이 있어야 해당 요소의 하위 요소가 목표가된다.
-
+> & 다음 공백이 있어야 해당 요소의 하위 요소가 목표가된다.   
 ![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/50fc0a80-06d2-4609-b31a-89694076c15c)   
 
 가상(pseudo) 선택자의 경우 아래와 같이 작성한다.   
-> 해당 요소 자체가 목표가 되어야 하는 경우 & 기호다음 빈 공간 없이 작성한다.
-
+> 해당 요소 자체가 목표가 되어야 하는 경우 & 기호다음 빈 공간 없이 작성한다.   
 ![image](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/89996cbb-9481-4185-8e4a-13baf3d155f0)   
 
 ### 장단점
@@ -130,3 +128,21 @@ Tailwind CSS의 공식 문서에세 정의된 모든 클래스의 이름을 찾�
 설치하는 것을 적극 추천한다.   
 ![스크린샷 2024-03-14 173334](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/2efff69a-1c53-4737-949c-98534c732906)
 ![스크린샷 2024-03-14 172954](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/4f55d216-98d6-43c6-84b6-e83a8bbd347f)
+
+### 장단점
+- 장점
+1. CSS를 많이 알지 못하더라도 비교적 접근하기 쉽다.
+> 아래와같이 정의된 클래스들을 넣어주면 스타일이 적용된다.
+![스크린샷 2024-03-15 110911](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/a34b46e5-9f48-421a-8a22-f9f7209b99f0)
+2. 바닐라 CSS도 사용 가능하다.
+> Tailwind에서 정의한 클래스만 사용하는 것이 아니라 본인이 직접 정한 스타일링 규칙도 CSS 파일에 추가하여 사용한다.
+![스크린샷 2024-03-15 111509](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/3aecf46f-d29d-47ff-91b7-aadffcad9c64)
+3. 커스텀(사용자 정의)가 가능하다.
+> 폰트를 설정한 예시   
+![스크린샷 2024-03-15 112846](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/8cb64828-41db-4295-80e9-c7c0d2edba7d)
+![스크린샷 2024-03-15 112901](https://github.com/100JM/react-styledcomponent-tailwind/assets/85985604/a7631978-53da-451d-80aa-7f89ea240e9d)
+4. 스타일링된 재사용이 가능한 컴포넌트를 만들 수 있다는 것이 리액트와 잘 어울린다.
+
+- 단점
+1. 긴 클래스 이름 값을 가진 요소들이 생긴다.
+2. JSX 코드에서 편집이 이루워지므로 스타일 코드와 JSX 코드 사이에 강한 분리가 없다.
